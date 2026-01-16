@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #020617;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* CARD */
+.card {
+  width: 80%;
+  margin: 50px auto;
+  background: #00020c;
+  padding: 30px;
+  border-radius: 16px;
+  scroll-margin-top: 120px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #38bdf8;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.project {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #111417;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #e0e2e6, #070e10);
+  color: #f6f6f7;
+  overflow-x: hidden;
+}

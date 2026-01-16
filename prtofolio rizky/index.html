@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Rizky maulana</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <img src="foto rizky.jpeg" alt="Foto Ky">
+  <h1>Halo, Saya Ky</h1>
+  <p>Web Developer & UI Designer</p>
+</section>
+
+
+<section id="about" class="card reveal">
+  <h2>Tentang Saya</h2>
+  <p>nama saya rizky maulana siswa SMK jurusan PPLG yang fokus web modern & UI elegan, saya mampu membuat wed dengan mengunakan html dan css dasar.</p>
+</section>
+
+<section id="about" class="card reveal">
+    <h2>pengalaman</h2>
+    <p>pengalaman saya sejauh ini dari smp sampai smk cuman kerja kelompok</p>
+</section>
+
+<section id="skills" class="card reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>C#</span>
+    <span>UI Design</span>
+  </div>
+</section>
+
+<section id="projects" class="card reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">Portfolio Website</div>
+    <div class="project">Aplikasi Sekolah</div>
+    <div class="project">-----</div>
+  </div>
+</section>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<a href="mailto:rus37822@gmail.com">
+  <i class="fa-regular fa-envelope"></i>
+</a>
+<a href="https://instagram.com/rizzkyzzzzz" target="_blank">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+<a href="https://wa.me/62895375675516" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealScroll() {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealScroll);
+  revealScroll();
+</script>
+
+</body>
+</html>
